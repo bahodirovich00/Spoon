@@ -1,0 +1,520 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+/* disable scrollbar */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+/* first page */
+
+.home-page {
+    background-image: url(./images/homepage-background.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.taskbar {
+    position: relative;
+    top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    margin-top: 10px;
+    width: 50%;
+}
+
+.menu, ul {
+    display: flex;
+    position: relative;
+}
+
+li, a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+
+li {
+    padding: 20px 10px;
+}
+
+li a:last-child {
+    margin-right: 15px;
+}
+
+.menu-dot {
+    margin: 30px 20px;
+    height: 5px;
+    width: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.menu button {
+    margin-top: 10px;
+    padding: 15px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu ul li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    top: 25px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.menu ul li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.menu button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.homepage-body {
+    position: relative;
+    top: 7.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+.homepage-body h1 {
+    font-size: 4.5rem;
+}
+
+.homepage-body p {
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+}
+
+.homepage-body button {
+    margin-top: 40px;
+    padding: 20px 30px;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #5ab963;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.homepage-body button:hover {
+    color: #5ab963;
+    background-color: #fff;
+    border: 2px solid #5ab963;
+}
+
+/* second page */
+
+.second-page {
+    height: 90vh;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper-1 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.secondpage-lighter {
+    font-weight:200;
+    color: #979797;
+}
+
+.secondpage-table {
+    position: relative;
+    display: flex;
+    top: 3rem;
+    width: 100%;
+}
+
+.secondpage-table img {
+    width: 25%;
+}
+
+.secondpage-table .third-box img {
+    width: 20%;
+}
+
+.first-box, .second-box, .third-box {
+    width: 33%;
+    border: 1px solid #f7f7f7;
+    margin: 0 30px 0 0;
+    padding: 50px 70px 80px 40px; 
+}
+
+.secondpage-table h4 {
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: 15px;
+}
+
+.secondpage-table p {
+    color: #999;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+/* third page */
+
+.third-page {
+    text-align: center;
+}
+
+.thirdpage-img {
+    height: 100vh;
+    background-image: url(./images/thirdpage-background.png);
+    background-position: top;
+    background-size: 95%;
+    background-repeat: no-repeat;
+}
+
+.third-page h3 {
+    margin-top: 4em;
+    font-size: 24px;
+    font-weight: 100;
+    color: #999;
+    margin-bottom: 2rem;
+}
+
+.third-page .thirdpage-bolder-text {
+    color: #000;
+    font-weight: 700;
+}
+
+.third-page a {
+    position: relative;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'IBM Plexo Mono', monospace;
+    color: #5ab963;
+    text-transform: capitalize;
+}
+
+.third-page a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    top: 25px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #5ab963;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.third-page a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.third-page .underline {
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+    height: 1px;
+    margin-top: 7em;
+    background-color: #ccc;
+    color: #ccc;
+    text-decoration: underline;
+}
+
+/* fourth page */
+
+.fourth-page {
+    height: 100vh;
+    margin-top: 7em;
+}
+
+.fourth-page img {
+    width: 40%;
+}
+
+.meal-1, .meal-2 {
+    display: flex;
+}
+
+.meals h3 {
+    margin: 20px 0 0 80px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 36px;
+}
+
+.meals span {
+    font-weight: 100;
+    color: #999;
+}
+
+.meals p {
+    font-family: 'IBM Plexo Mono', monospace;
+    color: #999;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.meal-1 {
+    margin-left: 4em;
+}
+
+.meal-2 img {
+    width: 45%;
+}
+
+.meal-2 {
+    margin-top: 6em;
+    margin-left: 20em; 
+}
+
+.meal-2 .meal2-information {
+    margin-right: 80px;
+}
+
+.fourth-page .fourth-page-h3 {
+    margin-top: 5em;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}
+
+.fourth-page-a {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fourth-page a {
+    position: relative;
+    color: #5ab963;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 20px;
+}
+
+.fourth-page a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    top: 25px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #5ab963;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.fourth-page a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.fourth-page .underline {
+    position: relative;
+    top: 7em;
+    display: block;
+    width: 1200px;
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 7em;
+    margin: 0 auto;
+}
+
+.fourthpage-end {
+    height: 60vh;
+    margin-top: 14em;
+}
+
+.wrapper-4 {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.fourthpage-end p {
+    color: #5ab963;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    display: flex;
+}
+
+.fourthpage-end p span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #5ab963;
+    margin: 10px 0 0 20px;
+}
+
+.fourthpage-end h2 span {
+    font-family: Libre Franklin;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+}
+
+.fourthpage-end h2 {
+    font-family: Libre Franklin;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 36px;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.fourthpage-end button {
+    font-family: Libre Franklin;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #fff;
+    background-color: #5ab963;
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+    width: 180px;
+    padding: 0px 30px;
+    text-transform: capitalize;
+    margin-top: 2em;
+}
+
+.fourthpage-end button:hover {
+    border: 2px solid #5ab963;
+    background-color: #fff;
+    color: #5ab963;
+}
+
+footer {
+    height: 50vh;
+    background-color: #0a0e1a;
+    margin-top: 47em;
+}
+
+footer .footer-logo {
+    margin-top: 6em;
+}
+
+footer img {
+    width: 60%;
+}
+
+footer .footer-logo h3 {
+    font-family: Libre Franklin;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #666666;
+    margin-top: 1em;
+}
+
+footer .footer-links {
+    width: 50%;
+    display: flex;
+    margin-top: 4em;
+    text-transform: capitalize;
+}
+
+footer .footer-links ul {
+    display: block;
+    margin-right: 2em;
+    font-size: 14px;
+}
+
+footer .social-links {
+    margin-top: 1em;
+}
+
+footer .social-links a{
+    padding: 0 10px;
+}
+
+.footer-links ul li {
+    position: relative!important;
+}
+
+.footer-links ul li a {
+    position: relative!important;
+    width: 100%;
+}
+
+.footer-links a:hover {
+    color: tan;
+}
+
+.footer-links ul li a::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    top: 25px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: tan;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+footer .footer-links ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+footer .social-links a:hover {
+    color: tan;
+}
